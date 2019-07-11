@@ -8,12 +8,12 @@ function mostrarAumento()
     var resultado;
     var descuento;
 
-    importe = prompt("Ingrese el importe");
-    document.getElementById('importe').value = importe;
+    importe=document.getElementById('importe').value;
 
-    resultado = parseInt(importe) * 25/100;
-    document.getElementById('resultado').value = resultado;
-    descuento = parseInt(importe) - parseInt(resultado);
+    descuento = parseInt(importe) * 25/100;
+    resultado = parseInt(importe) - parseInt(descuento);
+    resultado=document.getElementById('resultado').value;
+    //el getElementById va despues de definir resultado, porque todavia no le asigne un valor hasta que no la defino, despues llevo lo de id
 
     alert("El resultado con el descuento es "+descuento);
 
