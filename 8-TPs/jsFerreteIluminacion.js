@@ -13,39 +13,40 @@ function CalcularPrecio ()
     var cantidad;
     var precioDescuento;
     var marca;
-    var importeFinal;
+    /*var importeFinal;*/
     
     precio=35;
     
-    marca=prompt("Ingrese la marca");
     cantidad=document.getElementById('Cantidad').value;
     precioDescuento=document.getElementById('precioDescuento').value;
+    marca=document.getElementById('Marca').value;
     
     if(cantidad>=6){
         precioDescuento=precio*0.5;
     } else {
         if(cantidad==5 && marca=="ArgentinaLuz"){
             precioDescuento=precio-(precio*0.40);
-        }  else {
-            if(cantidad==5 && marca!=="ArgentinaLuz"){
+        } else {
+            if(cantidad==5 && marca!="ArgentinaLuz"){
             precioDescuento=precio-(precio*0.30);
             } else {
-                if(cantidad==4 && marca=="ArgentinaLuz" || marca=="FelipeLamparas"){
+                if((cantidad==4) && (marca=="ArgentinaLuz" || "FelipeLamparas")){
                     precioDescuento=precio-(precio*0.25);
                 } else {
-                if(cantidad==4 && marca!="ArgentinaLuz" || marca!=="FelipeLamparas"){
-                    precioDescuento=precio-(precio*0.20);
-                } else {
-                    if(cantidad==3 && marca=="ArgentinaLuz"){
-                        precioDescuento=precio-(precio*0.15);
+                    if((cantidad==4) && (marca!="ArgentinaLuz" || "FelipeLamparas")){ //no anda
+                        precioDescuento=precio-(precio*0.20);
                     } else {
+                        if(cantidad==3 && marca=="ArgentinaLuz"){
+                         precioDescuento=precio-(precio*0.15);
+                        } else {
                         if(cantidad==3 && marca=="FelipeLamparas"){
                             precioDescuento=precio-(precio*0.10); 
                         } else {
-                            if(cantidad==3 && marca!=="ArgentinaLuz" && marca!=="FelipeLamparas"){
+                            if((cantidad==3) && (marca!="ArgentinaLuz" || "FelipeLamparas")){
                                 precioDescuento=precio-(precio*0.05);
+                            } else {
+                                precioDescuento=precio;
                             }
-                            if()
                             }
                         }
                     }
@@ -56,15 +57,14 @@ function CalcularPrecio ()
     
     alert(precioDescuento);
 }
-
-    /* var marca;
+/* var marca;
     var cantidad;
     var precioDescuento;
 
     precio=35;
 
-    marca=prompt("Ingrese la marca");
     cantidad=document.getElementById('Cantidad').value;
+    marca=document.getElementById('Marca').value;
     precioDescuento=document.getElementById('precioDescuento').value;
 
     if(cantidad>5){
