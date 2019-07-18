@@ -21,7 +21,7 @@ while(respuesta!='no')
 
 	if(contador==1)
 	{
-		minimo=numero;
+		minimo=numero;   //En el primer ingreso, contador en 0, el max y min son iguales
 		maximo=numero;
 	}
 	if(numero>maximo)
