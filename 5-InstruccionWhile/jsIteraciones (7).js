@@ -7,19 +7,23 @@ function mostrar()
 	var numero;
 	var promedio;
 
-while(repuesta!='si'){
+while(respuesta=='si'){
 	contador++;
-	respuesta=prompt("¿Desea seguir?");
 	numero=prompt("Ingrese un numero");
 	numero=parseInt(numero);
-	acumulador+=numero;
-	promedio=acumulador/contador;
+	
+	while(isNaN(numero)){
+			numero=prompt("Error, ingresar un numero");
+			numero=parseInt(numero);
+	
+		}
+	acumulador=acumulador+numero;
+	respuesta=prompt("¿Desea seguir? Ingrese si");
 
 }
-while(isNaN(numero)){
+promedio=acumulador/contador;
 
-}
-
+alert("El promedio es "+promedio);
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
