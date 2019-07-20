@@ -19,7 +19,7 @@ while(respuesta!='no')
 		numero=parseInt(numero);
 	}
 
-	if(contador==1)
+	if(contador==0)
 	{
 		minimo=numero;   //En el primer ingreso, contador en 0, el max y min son iguales
 		maximo=numero;

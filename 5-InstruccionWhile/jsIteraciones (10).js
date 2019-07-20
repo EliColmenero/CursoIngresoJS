@@ -1,10 +1,10 @@
 function mostrar()
 {
 
-	var contador;
-	var contadorPositivos=0;
-	var contadorNegativos=0;
-	var acumulador=0;
+	var contador=0;
+	var promedioNegativo;
+	var promedioPositivo;
+	var contadorNegativos;
 	var numero; 
 	var negativo=0;
 	var positivo=0;
@@ -25,7 +25,8 @@ function mostrar()
 		if(numero<0)
 		{
 			negativo=negativo+numero;
-			contadorNegativos=contadorNegativos+numero;
+			promedioNegativo=negativo/contador;
+			contadorNegativos=contadorNegativos.length;
 
 		}
 		else 
@@ -33,15 +34,18 @@ function mostrar()
 			if(numero>0)
 			{
 				positivo=positivo+numero;
+				promedioPositivo=positivo/contador;
 			}
-
-		respuesta=prompt("Desea seguir? Ingrese 'si' ");
 	
 	}
+	respuesta=prompt("Desea seguir? Ingrese 'si' ");
 		}
 
-	document.write("El resultado es "+negativo+" </br>");
-	document.write("El resultado es "+positivo+" </br>");
+	document.write("El resultado de la suma es "+negativo+" </br>");
+	document.write("El resultado de la suma es "+positivo+" </br>");
+	document.write("El promedio es </br>"+promedioNegativo);
+	document.write("El promedio de positivos es </br>"+promedioPositivo);
+	document.write("La suma de negativos y positivos es "+negativo+positivo+" </br>");
 
 
 }//FIN DE LA FUNCIÓN
