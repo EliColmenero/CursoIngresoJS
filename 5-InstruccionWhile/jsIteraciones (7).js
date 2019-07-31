@@ -1,7 +1,23 @@
 function mostrar()
 {
 
+	var acumulador=0;
 	var contador=0;
+	var respuesta='si';
+	var numero;
+	var promedio;
+
+	do{
+		numero=prompt("Ingrese un numero");
+		numero=parseInt(numero);
+
+	} while(isNaN(numero) )
+	
+	
+	
+	document.getElementById('suma').value=acumulador;
+	document.getElementById('promedio').value=acumulador/contador;
+	/*var contador=0;
 	var acumulador=0;
 	var respuesta='si';
 	var numero;
@@ -26,6 +42,6 @@ promedio=acumulador/contador;
 alert("El promedio es "+promedio);
 
 document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
+document.getElementById('promedio').value=acumulador/contador;*/
 
 }//FIN DE LA FUNCIÓN
