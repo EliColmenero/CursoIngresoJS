@@ -4,7 +4,7 @@ function mostrar()
 
         for(contador=0 ;  ; contador+1){
             console.log(contador);
-    } if(contador=1000){
+    } if(contador=10){
         Break;
     }
 
