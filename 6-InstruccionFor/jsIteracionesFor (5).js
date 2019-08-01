@@ -1,14 +1,16 @@
 function mostrar()
 {
-    var contador=0;
-    var numero;
+    var i;
     
-    numero=prompt("Ingrese un numero");
-    if(numero!=9){      
-    for(contador=0 ; contador>0 ; contador++){
-                console.log(contador);
+         
+    for(i=0; ;i++){
+
+        i=prompt("Ingrese un numero");
         
-        } 
+        if(i==9){
+            
+            break;
+        }
     }  
 
 

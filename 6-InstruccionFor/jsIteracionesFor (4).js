@@ -1,12 +1,15 @@
 function mostrar()
 {
-    var contador=0;
+    var i;
 
-        for(contador=0 ;  ; contador+1){
-            console.log(contador);
-    } if(contador=10){
-        Break;
+        for(i=0;  ;i++){
+            console.log(i);
+     if(i==1000){
+       
+        break;
+        
     }
+        }
 
 
 }//FIN DE LA FUNCIÓN
