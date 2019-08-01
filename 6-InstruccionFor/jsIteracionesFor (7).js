@@ -6,8 +6,8 @@ var cantidadDivisores=0;
 
 numero=prompt("Ingrese un numero");
 
-for(i=0; i<=numero ; i++){
-    if(i%numero){
+for(i=1; i<=numero ; i++){
+    if(numero%i==0){
         console.log(i);
         cantidadDivisores++;
     }
