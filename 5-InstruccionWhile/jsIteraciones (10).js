@@ -71,7 +71,7 @@ function mostrar()
 			promedioNegativo = "No se ingresaron numeros negativos";
 		}
 
-	diferencia=acumuladorPositivos-(acumuladorNegativos*(-1));
+	diferencia=(acumuladorPositivos-acumuladorNegativos);
 
 
 

@@ -8,6 +8,7 @@ var acumuladorNotas=0;
 var promedio;
 var minimo=10;
 var maximo=0;
+var cantidadM=0;
 
 while(respuesta=='si' && contadorNotas<5){ 
 
@@ -30,7 +31,10 @@ while(respuesta=='si' && contadorNotas<5){
                 if(nota<minimo && (sexo=="f" || sexo=="m")){
                     minimo=nota;
                     alert("La nota minima es "+minimo+" y el sexo es "+sexo); 
-                } 
+                } if(sexo=="m" && nota>=6){
+                    cantidadM++;
+                    alert("La cantidad de varones con nota mayor = a 6 es "+cantidadM);
+                }
             
     } else {
         alert("El sexo no es valido");

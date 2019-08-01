@@ -24,5 +24,5 @@ if(contadorDivisores==2)
     alert("No es primo");
 }
 //Aparece en consola todos los numeros del 1 a ese numero porque evalua cada uno si es divisible o no
-
+//Consola=sources, poner un break point y correr el programa hasta ahi. Va a hacer la repeticion del for hasta que llega a evaluar si es primo o no, pasando por todos los numeros
 }//FIN DE LA FUNCIÓN
