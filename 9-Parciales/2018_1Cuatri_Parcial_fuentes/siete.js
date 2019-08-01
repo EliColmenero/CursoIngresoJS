@@ -29,7 +29,7 @@ while(contadorNotas<5)
         sexo=prompt("El sexo es invalido, ingrese sexo f o m");
 
             }
-                acumuladorNotas=acumuladorNotas+nota;
+            acumuladorNotas=acumuladorNotas+nota;
 
                 if(contadorNotas==1)
                 {
@@ -57,7 +57,7 @@ while(contadorNotas<5)
 
                 promedio=acumuladorNotas/contadorNotas;
 
-                
+
       alert("El promedio es : "+promedio);
       alert("La nota es "+minimo+" y el sexo es "+sexobaja);
       alert("La cantidad de varones que su nota haya sido mayor o igual a 6 es : "+contador);
