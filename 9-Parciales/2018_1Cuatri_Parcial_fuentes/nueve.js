@@ -5,6 +5,7 @@ var peso;
 var temperatura;
 var i=0;
 var respuesta="si";
+var temperaturaPar=0;
 
 
 while(respuesta=="si"){ 
@@ -23,11 +24,16 @@ temperatura=prompt("Ingrese temperatura");
             temperatura=prompt("Ingrese temperatura correcta");
         }
     }
+    if(temperatura%2==0){
+        temperaturaPar++;
+    }
     
 
 
 respuesta=("Desea seguir? 'si' o 'no' ");
 }
 
+document.write("La cantidad de temperaturas pares es "+temperaturaPar);
+document.write("")
 
 }
