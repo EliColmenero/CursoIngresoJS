@@ -2,7 +2,7 @@ function mostrar()
 {
 var numero;
 var letra;
-var contador=0;
+var contador=0;   //Variable de control, va siempre en el primer while grande
 var respuesta="si";
 var cantidadPares=0;
 var cantidadImpares=0;
@@ -42,35 +42,47 @@ while(respuesta=='si'){
          else {
             cantidadImpares++;
          }
-         if(numero==0){
+        if(numero==0)
+        {
             cantidadCeros++;
-         } 
-         if(numero>0){
+        } 
+        if(numero>0)
+        {
             positivo=positivo+numero;
             cantidadPositivos++;
             acumuladorPositivos=acumuladorPositivos+numero;
-         } else {
+        } 
+         else 
+         {
              negativo=negativo+numero;
              cantidadNegativos++;
              acumuladorNegativos=acumuladorNegativos+numero;
          }
 
-         if(contador==0){
-            minimo=numero;
-            maximo=numero;
-            letraMinima=letra;
-            letraMaxima=letra;
-         } else {
-             if(numero>maximo){
-                 maximo=numero;
-                 letraMaxima=letra;
-             } else {
-                 if(numero<minimo){
-                     minimo=numero;
-                     letraMinima=letra;
-                 }
-             }
-        }
+            if(contador==0)
+            {
+                minimo=numero;
+                maximo=numero;
+                letraMinima=letra;
+                letraMaxima=letra;
+            } 
+            else 
+            {
+                if(numero>maximo)
+                {
+                    maximo=numero;
+                    letraMaxima=letra;
+                } 
+                else 
+                {
+                    if(numero<minimo)
+                    {
+                        minimo=numero;
+                        letraMinima=letra;
+                    }
+                }
+            }
+        //Puede ir aca el contador++ en vez de arriba
     
     respuesta=prompt("Quiere seguir? 'si' o 'no' ");
 } 
