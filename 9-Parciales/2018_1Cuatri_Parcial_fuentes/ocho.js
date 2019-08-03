@@ -22,15 +22,20 @@ var letraMinima=0;
 
 while(respuesta=='si'){ 
     contador++;
-    letra=prompt("Ingrese una letra");
-    numero=prompt("Ingrese un numero");
+    letra=prompt("Ingrese una letra");  //Pido letra
+    
+    while(!isNaN(letra) || letra.length>1){    //Para que no ingrese numeros y que ingrese no mas de un digito
+        letra=prompt("Ingrese una letra válida");
+    } 
+
+    numero=prompt("Ingrese un numero"); //Pido numero
     numero=parseInt(numero);
 
     while(isNaN(numero) || (numero>=100 || numero<=-100)){
         numero=prompt("Ingrese un numero valido");
         numero=parseInt(numero);
-
     }
+
     if(numero%2==0){
         cantidadPares++;
     }
@@ -66,7 +71,7 @@ while(respuesta=='si'){
                  }
              }
         }
-         
+    
     respuesta=prompt("Quiere seguir? 'si' o 'no' ");
 } 
     promedio=acumuladorPositivos/cantidadPositivos;
