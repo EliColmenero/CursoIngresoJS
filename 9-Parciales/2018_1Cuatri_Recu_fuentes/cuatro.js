@@ -1,48 +1,30 @@
 function mostrar()
 {
-<<<<<<< HEAD
-    var numeroUno;
-    var numeroDos;
-
-    numeroUno=prompt("Ingrese el primer valor");
-    numeroDos=prompt("Ingrese el segundo valor");
-
-        if(numeroUno==numeroDos){
-            resultado=numeroUno+numeroDos;
-        } 
-        else
-        {
-            if(numeroUno>numeroDos){
-                alert("El resultado es "+numeroUno/numeroDos);
-            }
-        }
-
-    alert(resultado);
-=======
 var numeroUno;
-    var numeroDos;
-    var mensaje;
->>>>>>> daf79979c9220fb658bf3e4d8dc66d2f9d02655b
+var numeroDos;
+var suma;
 
-    numeroUno=prompt("Ingrese el primer valor");
-    numeroDos=prompt("Ingrese el segundo valor");
-    if(numeroUno==numeroDos)
+
+numeroUno=prompt("Ingrese un número"); //pido los numeros
+numeroDos=prompt("Ingrese el segundo número");
+numeroDos=parseInt(numeroDos);
+numeroUno=parseInt(numeroUno);
+
+if(numeroUno==numeroDos){
+    resultado=(" "+numeroUno+""+numeroDos); //Si el numero es igual al otro
+} else { 
+    if(numeroUno>numeroDos){ //si el primer numero es mayor al numero dos
+    resultado=numeroUno/numeroDos;
+    }else{
+        resultado=numeroUno+numeroDos; //si el primer numero es menor al segundo numero
+    }
+    
+}
+
+alert(resultado);
+if((numeroUno+numeroDos)< 50) 
     {
-        mensaje=(numeroUno+""+numeroDos);
-    } else {
-        numeroUno=parseInt(numeroUno);
-        numeroDos=parseInt(numeroDos);
-        if(numeroUno>numeroDos)
-        {
-            mensaje=numeroUno/numeroDos;
-        } else {
-            mensaje=numeroUno+numeroDos;
-        }
-            if((numeroUno+numeroDos)<50)
-            {
-                mensaje="La suma es "+(numeroUno+numeroDos)+" y es menor a 50";
-            } 
-    } 
-alert(mensaje);
+    suma=numeroUno+numeroDos;  //si la suma de los numeros de la division da menos de 50
+    alert("La suma es "+suma+" y es menor a 50");
     }
 }

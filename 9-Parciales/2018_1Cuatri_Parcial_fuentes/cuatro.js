@@ -17,10 +17,12 @@ if(numeroUno==numeroDos){
         resultado=numeroUno-numeroDos;
     } else {
         resultado=numeroUno+numeroDos;
-    } 
-    if((numeroUno+numeroDos)>10){
-        alert("La suma es "+resultado+" y supero a 10");
     }
+    
 }
         alert(resultado);
+        if(numeroUno+numeroDos>10){
+            suma=numeroUno+numeroDos;
+                alert("La suma es "+suma+" y supero a 10");
+        }
 }

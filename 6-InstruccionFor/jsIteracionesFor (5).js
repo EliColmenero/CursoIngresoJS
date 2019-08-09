@@ -1,6 +1,16 @@
 function mostrar()
 {
     var i;
+
+    for(i=0; ;i++){
+        i=prompt("Ingrese un numero");
+        if(i==9){
+            break;
+        }
+    }
+    
+    
+    /*var i;
     
          
     for(i=0; ;i++){
@@ -11,7 +21,7 @@ function mostrar()
             
             break;
         }
-    }  
+    }  */
 
 
 }//FIN DE LA FUNCIÓN

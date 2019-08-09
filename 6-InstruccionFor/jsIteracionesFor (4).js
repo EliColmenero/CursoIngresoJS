@@ -1,6 +1,6 @@
 function mostrar()
 {
-    var i;
+ var i;
 
         for(i=0;  ;i++){
             console.log(i);
